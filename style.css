@@ -1,0 +1,168 @@
+•{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(florist.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.row-2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+}
+.row-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.row-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;    
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 100px;
+    text-align: center;
+    max-width: 550px;
+    padding-bottom: 1.5rem;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor:  pointer;
+    position: relative;
+    overflow: hidden;
+}
+.center{
+    display: flex;
+    justify-content: space-evenly;
+}
+navbar.fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .content h1{
+        font-size: 20px;
+    }
+        .navbar ul li{
+            display: block;
+        }  
+        .navbar{
+            position: absolute;
+            background: #009688;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            right: 0;
+            text-align: left;
+            z-index: 2;
+           
+        } 
+        navbar.fa{
+            display: block;
+            color: white;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.section {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 21px;
+}
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+.column {
+    flex: 1;
+    border: 1px solid #009688;
+    margin: 2px;
+    padding: 10px;
+    background: #3af4d5;
+    transition: 0.3s;
+}
